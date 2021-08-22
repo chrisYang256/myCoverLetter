@@ -32,6 +32,7 @@ h1 {
   margin: 0px 0px 0px 10px;
   transition-property: font-size transform;
   transition-duration: 0.1s;
+  z-index: 0;
 }
 #toMain:active {
   font-size: 4rem;
@@ -54,6 +55,10 @@ h1 {
   color: silver;
 }
 
+#oneLineWordWrap {
+  margin: auto; 
+  width: 500px;
+}
 #oneLineWord {
   text-align: center;
   margin-top: 10%;

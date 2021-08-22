@@ -10,11 +10,22 @@
   }
   .main-list-contents {
     font-size: 22px;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   #nowHere {
     font-size: 40px;
+  }
+
+  #oneLineWordWrap {
+    margin: auto; 
+    width: 70%;
+  }
+  #oneLineWord {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 15px;
+    background-color: #e8fffb;
   }
 }
 
