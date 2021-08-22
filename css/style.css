@@ -1,0 +1,110 @@
+/* extensive */
+
+@font-face {
+  font-family: Allison;
+  src: url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+}
+
+@font-face {
+  font-family: 'Cute Font', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Allison&family=Cute+Font&display=swap');
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background-color: steelblue;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  border-bottom: 5px solid gold;
+  font-family: Allison;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+#toMain {
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0px 0px 0px 10px;
+  transition-property: font-size transform;
+  transition-duration: 0.1s;
+}
+#toMain:active {
+  font-size: 4rem;
+}
+
+#main-ul {
+  text-align: center; 
+  padding: 0px;
+  margin-top: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:7px;
+}
+
+#nowHere {
+  font-size: 45px;
+}
+#divideLine {
+  font-size: 20px;
+  color: silver;
+}
+
+#oneLineWord {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 20px;
+  background-color: #e8fffb;
+}
+
+
+/* index */
+
+
+
+/* i */
+
+#iImg {
+  width: 350px;
+  margin: 20px 10px 20px 10px;
+}
+
+
+
+/* Love */
+
+#loveWord {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+#loveImgWrap {
+  display: inline-block;
+}
+
+
+/* we */
+
+#weIcon {
+  display: inline-block;
+  margin: 30px;
+}
+
+
+/* footer */
+
+#footer {
+  background-color: white;
+  margin-top: 70px;
+}
+
+#footerInfoSince {
+  text-align: center; 
+  font-size: 10px; 
+  margin: 30px;
+}

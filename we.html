@@ -5,24 +5,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allison&family=Cute+Font&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/class.css">
+  <link rel="stylesheet" href="./css/mediaq.css">
   <title>My cover letter - We</title>
 </head>
 
 <body>
-  <h1><a href="index.html">Chris-Yang</a></h1>
+  <h1><a id="toMain" href="index.html">Chris-Yang</a></h1>
 
-  <ul>
-    <li><a href="I.html">I</a></li>
-    <li><a href="love.html">Love</a></li>
-    <li><a href="we.html">We</a></li>
+  <ul id="main-ul">
+    <li class="main-list"><a class="main-list-contents" href="I.html">I.</a></li>
+    <span id="divideLine">/</span>
+    <li class="main-list"><a class="main-list-contents" href="love.html">Love.</a></li>
+    <span id="divideLine">/</span>
+    <li class="main-list"><a class="main-list-contents" id="nowHere" href="we.html">We.</a></li>
   </ul>
 
-<p>우리는 이곳에서 함께할 수 있어요.</p>
-
-<a href="https://velog.io/@max-sum" target='blank'>velog</p>
-
-<a href="https://github.com/chrisYang256" target='blank'>github</p>
-
+  <div class="weIconAll">
+    <div id="weIcon">
+      <a href="https://velog.io/@max-sum" target='blank'>
+        <img class="weImg" src="./img/velog.png" art="velog link img">
+      </a>
+    </div>
+    <div id="weIcon">
+      <a href="https://github.com/chrisYang256" target='blank'>
+        <img class="weImg" src="./img/github.png" art="github link img">
+      </a>
+    </div>
+  </div>
+  
+  <div style="margin: auto; width: 500px;">
+    <p id="oneLineWord">우리는 이곳에서 함께할 수 있어요.</p>
+  </div>
+  
+  <footer id="footer">
+    <div>
+      <p id="footerInfoSince">~ made in August 2021 ~</p>
+    </div>
+  </footer>
 
 </body>
 

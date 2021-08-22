@@ -1,0 +1,49 @@
+/* extensive */
+
+@media screen and (max-width: 800px) {
+  #toMain {
+    font-size: 20px;
+  }
+
+  #main-ul {
+    margin-top: 30px;
+  }
+  .main-list-contents {
+    font-size: 22px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  #nowHere {
+    font-size: 40px;
+  }
+}
+
+
+/* index */
+
+@media screen and (max-width: 800px) {
+  .indexImg {
+    width: 370px;
+    margin: 20px 10px 10px 10px;
+  }
+}
+
+
+
+/* love */
+
+@media screen and (max-width: 1000px) {
+  #loveImgDiv {
+    display: block;
+  }
+}
+
+
+/* we */
+
+@media screen and (max-width: 800px) {
+  .weIconAll {
+    text-align: center;
+    margin-top: -20px;
+  }
+}
