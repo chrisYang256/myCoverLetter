@@ -15,7 +15,7 @@
     margin-right: -10px;
   }
   #nowHere {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   #oneLineWordWrap {
@@ -24,8 +24,8 @@
   }
   #oneLineWord {
     text-align: center;
-    margin-top: 10%;
-    font-size: 15px;
+    margin-top: 20%;
+    font-size: 17px;
     background-color: #e8fffb;
   }
 }
@@ -57,5 +57,10 @@
   .weIconAll {
     text-align: center;
     margin-top: -20px;
+  }
+
+  .weImg {
+    width: 150px;
+    margin: 20px;
   }
 }
