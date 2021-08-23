@@ -37,10 +37,10 @@
   }
 
   #hoverTextFraim {
-    max-width: 300px; width: 100%; margin: 0 auto;
+    max-width: 300px; 
   }
   #hoverTextAnchor {
-    display: block; width: 300px; text-decoration: none;
+    width: 300px;
   }
   .hoverText {
     font-family: 'Cute Font';
@@ -50,6 +50,7 @@
     -webkit-text-stroke-color: black;
   }
 }
+
 
 
 /* index */
