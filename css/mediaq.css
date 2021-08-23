@@ -45,9 +45,9 @@
   .hoverText {
     font-family: 'Cute Font';
     font-size: 22px;
-    color: white;
+    color: darkslategray;
     -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: rgb(211, 129, 181);
+    -webkit-text-stroke-color: black;
   }
 }
 
@@ -75,9 +75,9 @@
 /* we */
 
 @media screen and (max-width: 800px) {
-  .weIconAll {
+  #weIconFraim {
     text-align: center;
-    margin-top: -20px;
+    margin-top: -30px;
   }
 
   .weImg {
