@@ -81,6 +81,12 @@ h1 {
   color: silver;
 }
 
+#guide {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+
 #oneLineWordWrap {
   margin: auto; 
   width: 500px;
@@ -163,8 +169,8 @@ h1 {
   font-family: 'Cute Font';
   font-size: 30px;
   color: darkslategray;
-  -webkit-text-stroke-width: .5px;
-	-webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .2px;
+	-webkit-text-stroke-color: darkturquoise;
   -ms-user-select: none; 
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -196,14 +202,14 @@ h1 {
   position: absolute;
   right: 150%;
   z-index: 2;
-  border: 1px solid lightpink;
+  border: 2px solid lightpink;
   transition: all 0.1s;
   border-top-right-radius: 10%;
 }
 #hoverTextAnchor:hover #hoverTextTop { bottom:70%; }
 #hoverTextAnchor:hover #hoverTextMiddle { bottom:0%; }
 #hoverTextAnchor:hover #hoverTextBottom { top:28%; }
-#hoverTextAnchor:hover #hoverTextBgd { right:0%;}
+#hoverTextAnchor:hover #hoverTextBgd { left:0.01%; top:0.1% }
 
 
 
@@ -256,15 +262,25 @@ h1 {
   width: 200px;
   margin: 30px;
   animation: rotate_image 7s linear infinite;
-  transform-origin: 50% 50%;
 }
 @keyframes rotate_image{
   100% {
-      transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
+#weImgSpin {
+  transition: all 3s linear;
+}
+#weImgSpin:hover {
+  transform: rotate(3600deg);
+}
 
-
+#weImgEscape {
+  transition: all 0.3s linear;
+}
+#weImgEscape:hover {
+  transform: translateX(323.5px);
+}
 
 /* footer */
 
@@ -280,4 +296,13 @@ h1 {
   color: gold;
   -webkit-text-stroke-width: .2px;
 	-webkit-text-stroke-color: black;
+}
+
+#footerInfoSinceSpin {
+  transition: all ease 6s;
+  -webkit-transition: all ease 6s;
+}
+#footerInfoSinceSpin:hover {
+  transform: rotate(3600deg);
+  -webkit-transform: rotate(3600deg);
 }
