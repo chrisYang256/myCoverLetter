@@ -138,7 +138,6 @@ h1 {
   display: block; 
   width: 400px; 
   text-decoration: none;
-  z-index: 2;
 }
 .hoverTextScreen {
   position: relative; 
@@ -157,7 +156,7 @@ h1 {
   opacity: 0;
   transition: all .5s;
 }
-#hoverTextAnchor:hover .hoverTextScreen::after {
+#hoverTextCover:hover .hoverTextScreen::after {
   opacity: 1;
 }
 
