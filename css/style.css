@@ -137,6 +137,7 @@ h1 {
   display: block; 
   width: 400px; 
   text-decoration: none;
+  z-index: 5;
 }
 .hoverTextScreen {
   position: relative; 
