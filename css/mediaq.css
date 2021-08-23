@@ -8,8 +8,6 @@
   #main-ul {
     margin-top: 30px;
     top:10px;
-    width: 200px;
-    margin: auto;
   }
   .main-list-contents {
     font-size: 22px;
@@ -31,6 +29,27 @@
     background-color: #e8fffb;
   }
 }
+@media screen and (max-width: 500px) {
+  #main-ul {
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #hoverTextFraim {
+    max-width: 300px; width: 100%; margin: 0 auto;
+  }
+  #hoverTextAnchor {
+    display: block; width: 300px; text-decoration: none;
+  }
+  .hoverText {
+    font-family: 'Cute Font';
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(211, 129, 181);
+  }
+}
 
 
 /* index */
@@ -46,7 +65,7 @@
 
 /* love */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #loveImgDiv {
     display: block;
   }

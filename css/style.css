@@ -45,15 +45,34 @@ h1 {
 #main-ul {
   margin: 0 auto;
   font-size: 0;
-  max-width: 500px;
+  max-width: 700px;
   text-align: center; 
+  padding: 0;
   margin-top: 30px;
   position: -webkit-sticky;
   position: sticky;
   top:7px;
   z-index: 9;
 }
-
+.main-list {
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+.main-list-contents {
+  font-size: 35px;
+  text-shadow: 1px 0 rgb(65, 64, 64);
+  color: tomato;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition-property: font-size transform;
+  transition-duration: 0.1s;
+}
+.main-list-contents:active {
+  font-size:5rem;
+}
 #nowHere {
   font-size: 45px;
 }
@@ -73,15 +92,27 @@ h1 {
   font-size: 20px;
   background-color: #e8fffb;
 }
-
 #sentenceWrap {
   width: 300px; 
   margin: auto; 
   text-align: left;
 }
+.sentence {
+  font-family: 'Cute Font';
+  font-size: 25px;
+  color: #314c78;
+}
+
 
 
 /* index */
+
+.indexImg {
+  width: 450px;
+  margin: 20px 10px 20px 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 
 
@@ -96,23 +127,116 @@ h1 {
 
 /* Love */
 
-#loveWord {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
+#hoverTextFraim {
+  max-width: 400px; 
+  width: 100%; 
+  margin: 0 auto;
 }
+#hoverTextCover {
+  display: inline-block; 
+  vertical-align: top;
+}
+#hoverTextAnchor {
+  display: block; 
+  width: 400px; 
+  text-decoration: none;
+}
+.hoverTextScreen {
+  position: relative; 
+  overflow: hidden;
+}
+.hoverTextScreen::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0;
+  transition: all .5s;
+}
+#hoverTextAnchor:hover .hoverTextScreen::after {
+  opacity: 1;
+}
+
+.hoverText {
+  font-family: 'Cute Font';
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: rgb(211, 129, 181);
+}
+#hoverTextTop {
+  position: absolute; 
+  bottom: 150%; 
+  z-index: 2; 
+  left: 15px;
+  transition: all .5s;
+}
+#hoverTextMiddle {
+  position: absolute; 
+  bottom: 150%; 
+  z-index: 2; 
+  left: 15px;
+  transition: all 1s
+}
+#hoverTextBottom {
+  position: absolute; 
+  top: 150%; 
+  z-index: 2; 
+  left: 15px;
+  transition: all 1s
+}
+#hoverTextAnchor:hover #hoverTextTop { bottom:70%; }
+#hoverTextAnchor:hover #hoverTextMiddle { bottom:0%; }
+#hoverTextAnchor:hover #hoverTextBottom { top:28%; }
+
 
 #loveImgWrap {
   display: inline-block;
 }
+.loveImg {
+  margin: 50px 30px 20px 30px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 25% 5%;
+}
+
+.loveCommentWrap {
+  border: 3px solid pink;
+  width: 200px;
+  margin: auto;
+  margin-top: -20px;
+}
+.loveComment {
+  font-family: 'Cute Font';
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 
 /* we */
 
-#weIcon {
+#weIconFraim {
+  text-align: center;
+  margin-top: 30px;
+}
+.weIconWrap {
   display: inline-block;
   margin: 30px;
 }
+
+.weImg {
+  width: 200px;
+  margin: 30px;
+}
+
 
 
 /* footer */
