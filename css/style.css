@@ -143,7 +143,7 @@ h1 {
   overflow: hidden;
 }
 .hoverTextScreen::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
