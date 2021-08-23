@@ -10,6 +10,7 @@
 
 .main-list-contents {
   font-size: 35px;
+  text-shadow: 1px 0 rgb(65, 64, 64);
   color: tomato;
   text-decoration: none;
   margin-left: 30px;

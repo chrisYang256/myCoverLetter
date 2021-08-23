@@ -8,6 +8,8 @@
   #main-ul {
     margin-top: 30px;
     top:10px;
+    width: 200px;
+    margin: auto;
   }
   .main-list-contents {
     font-size: 22px;
