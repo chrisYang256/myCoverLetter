@@ -29,13 +29,20 @@
     background-color: #e8fffb;
   }
 }
+
 @media screen and (max-width: 500px) {
   #main-ul {
     width: 200px;
     margin: auto;
     margin-top: 10px;
   }
+}
 
+
+
+/* i */
+
+@media screen and (max-width: 500px) {
   #hoverTextFraim {
     max-width: 300px; 
   }
@@ -43,11 +50,7 @@
     width: 300px;
   }
   .hoverText {
-    font-family: 'Cute Font';
     font-size: 22px;
-    color: darkslategray;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
   }
 }
 

@@ -240,11 +240,11 @@ h1 {
 .weImg {
   width: 200px;
   margin: 30px;
-  transition: all ease-out 0.1s;
+  transition: all ease-out 0.5s;
 }
 .weImg:hover {
-  -webkit-transform: scaleY(1.5);
-  transform: scaleY(1.5);
+  -webkit-transform: rotate(720deg);
+	transform: rotate(720deg);
 }
 
 
