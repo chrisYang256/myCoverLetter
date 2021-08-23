@@ -142,7 +142,7 @@ h1 {
   position: relative; 
   overflow: hidden;
 }
-.hoverTextScreen::after {
+/* .hoverTextScreen::after {
   content: "";
   display: block;
   position: absolute;
@@ -157,12 +157,12 @@ h1 {
 }
 #hoverTextCover:hover .hoverTextScreen::after {
   opacity: 1;
-}
+} */
 
 .hoverText {
   font-family: 'Cute Font';
   font-size: 30px;
-  color: white;
+  color: darkslategray;
   -webkit-text-stroke-width: .5px;
 	-webkit-text-stroke-color: black;
   -ms-user-select: none; 
@@ -183,7 +183,7 @@ h1 {
   bottom: 150%; 
   z-index: 3; 
   left: 15px;
-  transition: all 1s
+  transition: all ease-out 1.2s
 }
 #hoverTextBottom {
   position: absolute; 
@@ -192,16 +192,18 @@ h1 {
   left: 15px;
   transition: all 1s
 }
-/* #hoverTextImg {
+#hoverTextBgd {
   position: absolute;
-  bottom: 150%;
+  right: 150%;
   z-index: 2;
-  opacity: 1;
-} */
-#hoverTextCover:hover #hoverTextTop { bottom:70%; }
-#hoverTextCover:hover #hoverTextMiddle { bottom:0%; }
-#hoverTextCover:hover #hoverTextBottom { top:28%; }
-/* #hoverTextAnchor:hover #hoverTextImg { bottom:0; } */
+  border: 1px solid lightpink;
+  transition: all 0.1s;
+  border-top-right-radius: 10%;
+}
+#hoverTextAnchor:hover #hoverTextTop { bottom:70%; }
+#hoverTextAnchor:hover #hoverTextMiddle { bottom:0%; }
+#hoverTextAnchor:hover #hoverTextBottom { top:28%; }
+#hoverTextAnchor:hover #hoverTextBgd { right:0%;}
 
 
 
@@ -253,12 +255,15 @@ h1 {
 .weImg {
   width: 200px;
   margin: 30px;
-  transition: all ease-out 0.5s;
+  animation: rotate_image 7s linear infinite;
+  transform-origin: 50% 50%;
 }
-.weImg:hover {
-  -webkit-transform: rotate(720deg);
-	transform: rotate(720deg);
+@keyframes rotate_image{
+  100% {
+      transform: rotateY(360deg);
+  }
 }
+
 
 
 /* footer */
