@@ -17,6 +17,12 @@ body {
   margin: 0;
 }
 
+#header {
+  z-index: 8;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
 h1 {
   background-color: steelblue;
   margin: 0;
@@ -24,35 +30,33 @@ h1 {
   padding-bottom: 5px;
   border-bottom: 5px solid gold;
   font-family: Allison;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 8;
-  top: 0px;
 }
 
 #toMain {
+  z-index: 10;
   font-size: 40px;
   text-decoration: none;
   margin: 0px 0px 0px 10px;
   transition-property: font-size transform;
   transition-duration: 0.1s;
-  z-index: 10;
 }
 #toMain:active {
   font-size: 4rem;
 }
 
-#main-ul {
-  margin: 0 auto;
-  font-size: 0;
-  max-width: 700px;
-  text-align: center; 
-  padding: 0;
-  margin-top: 30px;
+#nav {
+  z-index: 9;
   position: -webkit-sticky;
   position: sticky;
   top:7px;
-  z-index: 9;
+  margin-top: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+#main-ul {
+  font-size: 0;
+  text-align: center; 
+  padding: 0;
 }
 .main-list {
   display: inline-block;
