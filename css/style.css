@@ -136,10 +136,6 @@ h1 {
   width: 100%; 
   margin: 0 auto;
 }
-#hoverTextCover {
-  display: inline-block; 
-  vertical-align: top;
-}
 #hoverTextAnchor {
   display: block; 
   width: 400px; 
@@ -284,7 +280,7 @@ h1 {
 
 /* footer */
 
-#footer {
+.footerContents {
   background-color: white;
   margin-top: 70px;
 }
