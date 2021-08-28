@@ -22,6 +22,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  padding-bottom: 20px;
 }
 h1 {
   background-color: steelblue;
@@ -135,35 +136,17 @@ h1 {
   pointer-events: none;
 }
 
-#hoverTextFraim {
+#hoverTextContainer {
   max-width: 400px; 
   width: 100%; 
   margin: 0 auto;
 }
 #hoverTextAnchor {
   display: block; 
-  width: 400px; 
-}
-.hoverTextScreen {
+  /* width: 400px;  */
   position: relative; 
   overflow: hidden;
 }
-/* .hoverTextScreen::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-  opacity: 0;
-  transition: all .5s;
-}
-#hoverTextCover:hover .hoverTextScreen::after {
-  opacity: 1;
-} */
 
 .hoverText {
   font-family: 'Cute Font';
@@ -205,6 +188,7 @@ h1 {
   border: 2px solid lightpink;
   transition: all 0.1s;
   border-top-right-radius: 10%;
+  width: 99.1%;
 }
 #hoverTextAnchor:hover #hoverTextTop { bottom:70%; }
 #hoverTextAnchor:hover #hoverTextMiddle { bottom:0%; }
